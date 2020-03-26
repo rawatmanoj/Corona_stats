@@ -1,0 +1,59 @@
+@import './styles/helper.scss';
+
+
+// Variables
+
+$main-color: #ecfbfc;
+
+
+
+.main-container{
+    @include flex(column,center,center);
+   
+    padding-top: 40px;
+   
+}
+
+.main{
+    min-height:100vh;
+    background-color: $main-color;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.covid{
+   font-size: 70px;
+   border-bottom: 2px solid black;
+}
+
+.total-cases{
+    font-size:25px;
+    
+}
+
+.stats-container{
+    font-size:20px;
+    // width: 100%;
+    @include flex(row,space-evenly,center);
+    font-family: 'Poppins', sans-serif;
+    padding:80px;
+}
+
+.secondary-container{
+  
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+  
+}
+
+.left-container{
+    
+   @include containers;
+}
+
+.right-container{
+
+    @include containers;
+
+}

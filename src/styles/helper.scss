@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex($direct,$content,$item) {
+    display: flex;
+    flex-direction: $direct;
+    justify-content: $content;
+    align-items:$item;
+
+}
+
+@mixin containers {
+    border: 2px solid black;
+    
+    border-radius: 5px;
+    @include flex(column,space-around,center);
+    div{
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}
